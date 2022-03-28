@@ -1,0 +1,22 @@
+{
+    "name": "weliton/twig-slim",
+    "autoload": {
+        "psr-4": {
+            "Weliton\\TwigSlim\\": "src/"
+        }
+    },
+    "files":[
+        "app/functions/Helpers.php"
+    ],
+    "authors": [
+        {
+            "name": "weliton",
+            "email": "welingtonzsilva@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^4.10",
+        "twig/twig": "^3.3",
+        "slim/psr7": "^1.5"
+    }
+}
