@@ -17,3 +17,6 @@ $errorMiddleware = $app->addErrorMiddleware(true,true,true);
 $response = Response::class;
 $request = Request::class;
 
+// rotas
+$routes = require __DIR__.'/config/routes.php';
+
