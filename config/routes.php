@@ -8,5 +8,5 @@ use Weliton\TwigSlim\Controllers\UpdateController;
 
         '/' => HomeController::class.':index',
         '/contato' => ContatoController::class.':index',
-        '/update/user/{id}'=> UpdateController::class.'update'
+        '/update/user/{id}'=> UpdateController::class.':update'
     ];
