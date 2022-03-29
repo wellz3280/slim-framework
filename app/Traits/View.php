@@ -30,7 +30,7 @@ trait View
     {
          $this->load();
         
-        echo $this->twig->render($view.'.html', $data);
+        echo $this->twig->render($view, $data);
     }
 
 }
