@@ -1,5 +1,7 @@
 <?php
 
+use Weliton\TwigSlim\Controllers\HomeController;
+
 require __DIR__.'/../bootstrap.php';
 
 
@@ -9,6 +11,7 @@ require __DIR__.'/../bootstrap.php';
 //     return $response;
 // });
 // trabalhando com rotas 
-$app->get('/','app/controllers/Homecontroller:index');
+$app->get('/','\Weliton\TwigSlim\Controllers\HomeController:index');
+$app->get('/update/user/{id}','\Weliton\TwigSlim\Controllers\UpdateController:update');
 
 $app->run();
