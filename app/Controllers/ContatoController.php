@@ -13,7 +13,7 @@ class ContatoController implements InterfaceController
 
        $this->view('contato.html',[
            'titulo' => 'Contato',
-           'nome' => 'welitinho piranheiro da massa'
+           'nome' => 'welitinho pirangueiro da massa'
        ]); 
     }
 }

@@ -14,7 +14,7 @@ class HomeController implements InterfaceController
         
         $this->view('home.html',[
             'nome' => 'weliton',
-            'titulo' => 'Welitinho piranhudo'
+            'titulo' => 'Welitinho pirangueiro'
         ]);
 
     }
