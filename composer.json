@@ -2,7 +2,7 @@
     "name": "weliton/twig-slim",
     "autoload": {
         "psr-4": {
-            "Weliton\\TwigSlim\\": "src/"
+            "Weliton\\TwigSlim\\": "app/"
         }
     },
     "files":[
