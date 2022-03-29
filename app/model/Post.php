@@ -1,7 +1,8 @@
 <?php
     namespace Weliton\TwigSlim\model;
 
-class Posts extends Model
+class Post extends Model
 {
     protected string $table = 'posts';
 }
+

@@ -4,6 +4,23 @@
     <h2>
         {{titulo}}
     </h2>
+
+   
+    <table class="table table-striped">
+        <tr>
+            <td>Id</td>
+            <td>titulo</td>
+            <td>descricão</td>
+        </tr>
+
+        {% for posts in post %}
+            <tr>
+                <td>{{posts.idPost}}</td>
+                <td>{{posts.title}}</td>
+                <td>{{posts.description}}</td>
+            </tr>
+        {% endfor %}
+    </table>
     <button class="btn btn-success" id="btn_inscreva">Increverse</button>
 
     {% endblock %}

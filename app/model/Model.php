@@ -13,7 +13,7 @@ abstract class Model
 
     }
 
-    public function all(string $table):array
+    public function all():array
     {
         $sql = "SELECT * FROM {$this->table} ";
         $all = $this->connect->query($sql);
