@@ -1,7 +1,9 @@
 <?php
     namespace Weliton\TwigSlim\Controllers;
 
+
 use Weliton\TwigSlim\Traits\View;
+use Weliton\TwigSlim\Validates\Validate;
 
 class CadastroController implements InterfaceController
 {
@@ -13,8 +15,18 @@ class CadastroController implements InterfaceController
         ]);
     }
 
-    // public function store()
-    // {
+    public function store()
+    {
+        $validate = new Validate;
+        $validate->validate([
+            'name' => 'required',
+            'email' => 'required:email:unique@users',
+            'phone' => 'required:phone',
+        ]);
 
-    // }
+        if($validate->hasErrors()){
+            // return back();
+            echo "hehe";
+        }
+    }
 }
