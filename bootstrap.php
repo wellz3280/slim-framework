@@ -6,12 +6,14 @@ use Slim\Factory\AppFactory;
 
 require __DIR__ . '/vendor/autoload.php';
 
+// iniciando Sessão
+session_start();
 // criando a instancia de app
 $app = AppFactory::create();
 
 // habilitando erros
-// $app->addRoutingMiddleware();
-// $errorMiddleware = $app->addErrorMiddleware(true,true,true);
+$app->addRoutingMiddleware();
+$errorMiddleware = $app->addErrorMiddleware(true,true,true);
 
 // criando objetos 
 $response = Response::class;
