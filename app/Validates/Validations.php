@@ -13,6 +13,8 @@
         if(empty($field)){
             $this->errors[$field][] = $flash->flash($field,$flash->error('Esse campo é obrigatório'));
             return true;
+        }else{
+            return false;
         }
     }
 

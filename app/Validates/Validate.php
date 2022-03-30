@@ -15,7 +15,7 @@ class Validate extends Validations
                 $this->$validation($field);
             }
             
-            if($this->hasOneOrMoreValidation($validation)){
+            if($this->hasTwoOrMoreValidation($validation)){
                 $arrValidate = explode(':',$validation); 
                 
                 foreach($arrValidate as $validation){
@@ -32,8 +32,8 @@ class Validate extends Validations
         return substr_count($validate,':') == 0;
     }
     
-    // verifica se tem mais de uma vaidação
-    private function hasOneOrMoreValidation(string $validate):bool
+    // verifica se tem duas ou mais vaidaçôes
+    private function hasTwoOrMoreValidation(string $validate):bool
     {
         return substr_count($validate,':') >= 1;
     }

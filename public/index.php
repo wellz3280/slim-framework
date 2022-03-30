@@ -10,7 +10,11 @@ require __DIR__.'/../bootstrap.php';
 // });
 
 foreach($routes as $index => $route){
-   $app->get($index,$route);
+   if($_SERVER['REQUEST_METHOD'] === 'POST'){
+      $app->post($index,$route);
+   }else{
+      $app->get($index,$route);
+   }
 }
 
 $app->run();

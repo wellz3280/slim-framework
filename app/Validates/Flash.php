@@ -11,7 +11,7 @@ class Flash extends FlashMessage
 
     public function error($message):self
     {
-        echo "<span class='alert alert-danger'> {$message} </span> ";
+        echo "<span class='alert'> {$message} </span> ";
         return $this;
     }
 }
